@@ -1,5 +1,9 @@
 #include <stdio.h>
-/* prints a message*/
+/**
+ *main -entry point
+ *Description: " The program prints the string"
+ *Return: Always 0
+*/
 int main(void)
 {
 	/*print a string*/
@@ -7,4 +11,5 @@ int main(void)
 
 	puts(str);
 	return (0);
+
 }

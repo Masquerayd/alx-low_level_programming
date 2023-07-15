@@ -2,7 +2,7 @@
 /**
  *main -entry point
  *Description: " The program prints the string"
- *Return: Always 0
+ *Return: Always 
 */
 int main(void)
 {

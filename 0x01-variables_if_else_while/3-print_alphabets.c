@@ -14,14 +14,18 @@ int main(void)
 	  * alphabets
 	  */
 	char chr;
+	char A = 'a';
+	char B = 'z';
 
-	for (chr = 'a'; chr <= 'z'; chr++)
+	for (int count = 0; count <= 51; count++)
 	{
-		putchar(chr);
-	}
-	for (chr = 'A'; chr <= 'Z'; chr++)
-	{
-		putchar(chr);
+		putchar(A);
+		A++;
+
+		if (count == 25)
+		{
+			A = 'A';
+		}
 	}
 	putchar('$');
 	putchar('\n');

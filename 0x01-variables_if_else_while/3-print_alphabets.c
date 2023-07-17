@@ -26,7 +26,9 @@ int main(void)
 			A = 'A';
 		}
 	}
-	putchar('$');
+	/*
+	 * putchar('$');
+	 */
 	putchar('\n');
 	return (0);
 }

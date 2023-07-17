@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+
 /**
  * main - it ptint numbers 0 to
  * Description: uses printf to print numbers

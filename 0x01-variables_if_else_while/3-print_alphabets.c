@@ -13,11 +13,10 @@ int main(void)
 	  * Declaring the character variable that will be used for different
 	  * alphabets
 	  */
-	char chr;
 	char A = 'a';
-	char B = 'z';
+	int count;
 
-	for (int count = 0; count <= 51; count++)
+	for (count = 0; count <= 51; count++)
 	{
 		putchar(A);
 		A++;

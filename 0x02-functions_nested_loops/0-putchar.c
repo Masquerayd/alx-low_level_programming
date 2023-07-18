@@ -1,5 +1,8 @@
 #include "main.h"
 
+int _putchar(char c);
+
+
 /**
   *main - prints
   *Description: prints _putchar using header main.h

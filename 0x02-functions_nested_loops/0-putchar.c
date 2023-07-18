@@ -11,9 +11,9 @@
 
 int main(void)
 {
-	int i = 0;
+	int i[] = 0;
 	char string[] = "_putchar\n";
-
+	:
 	while (i < 9)
 	{
 
@@ -24,4 +24,3 @@ int main(void)
 	return (0);
 
 }
-

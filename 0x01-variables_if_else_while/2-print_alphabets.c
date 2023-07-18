@@ -15,15 +15,10 @@ int main(void)
 	  */
 	char chr;
 
-	for (chr = 'a'; chr <= 'z'; chr++)
+	for (chr = 'z'; chr <= 'a'; chr--)
 	{
 		putchar(chr);
 	}
-	for (chr = 'A'; chr <= 'Z'; chr++)
-        {
-                putchar(chr);
-        }
-	putchar('$');
 	putchar('\n');
 	return (0);
 }

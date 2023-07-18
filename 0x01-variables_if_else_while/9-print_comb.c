@@ -16,6 +16,7 @@ int main(void)
 		if (hex != 9)
 		{
 			putchar(',');
+			putchar(' ');
 		}
 	}
 

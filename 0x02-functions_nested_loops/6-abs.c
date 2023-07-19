@@ -4,7 +4,7 @@
 /**
   *_abs - returns abs
   *@a: int a
-  *return: returns abs of a
+  *Return: returns abs of a
   */
 int _abs(int a)
 {

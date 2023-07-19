@@ -9,19 +9,10 @@
   */
 int print_last_digit(int a)
 {
-	int b;
-	int c;
-	intmax_t d = imaxabs(a);
+	intmax_t b = imaxabs(a);
 
-	b = d % 10;
+	b = b % 10;
+	_putchar('0' + b);
 
-	for (c = 0; c <= 9; c++)
-	{
-		if (c == b)
-		{
-		_putchar('0' + c);
-		break;
-		}
-	}
-	return (c);
+	return (b);
 }

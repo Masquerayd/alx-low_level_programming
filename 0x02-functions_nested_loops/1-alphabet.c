@@ -1,4 +1,4 @@
-#include "main.h"
+#include "_putchar.c"
 
 /**
   * print_alphabet - prints alphabets
@@ -7,10 +7,9 @@
   *
   * Return: return nothing
   */
-void print_alphabet_x10(void)
+void print_alphabet(void)
 {
 	char A;
-	int i = 0;
 
 	for (A = 'a'; A <= 'z'; A++)
 	{

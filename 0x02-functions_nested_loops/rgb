@@ -3,7 +3,7 @@ read -p "please enter file name: " fnam
 echo '++++++++++++betty+++++++++++\n'
 betty $fnam
 echo "++++++++++++GCC++++++++++++++\\n"
-gcc $fnam 
+gcc main.c $fnam 
 echo "+++++++++file_output+++++++++\\n"
 ./a.out
-gi
+~/.gita

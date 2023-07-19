@@ -12,6 +12,7 @@ int print_last_digit(int a)
 	int b;
 	int c;
 	intmax_t d = imaxabs(a);
+	char e;
 
 	b = d % 10;
 
@@ -22,6 +23,6 @@ int print_last_digit(int a)
 		_putchar('0' + c);
 		}
 	}
-
-	return (putchar('0' + c));
+	e = _putchar('0' + c);
+	return (e);
 }

@@ -2,7 +2,7 @@
 #include <inttypes.h>
 
 /**
-  *main - returns abs
+  *_abs - returns abs
   *@a: int a
   *return: returns abs of a
   */

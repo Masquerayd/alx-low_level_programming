@@ -1,13 +1,18 @@
 #include "main.h"
 
 /**
-  *main - test code
-  *Description: Used to test functions defined in main.h
-  *Return: return 0
-  */
-		/***main.c***/
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
 int main(void)
 {
-	_islower('v');	
-	return (0);
+    int r;
+
+    print_last_digit(98);
+    print_last_digit(0);
+    r = print_last_digit(-1024);
+    _putchar('0' + r);
+    _putchar('\n');
+    return (0);
 }

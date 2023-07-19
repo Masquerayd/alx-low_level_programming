@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _islower - check character size
+ * _isalpha - check character size
  *
  * @c: int character
  *
@@ -10,7 +10,7 @@
  * Return: always zero
  */
 
-int _islower(int c)
+int _isalpha(int c)
 {
 	char chr;
 

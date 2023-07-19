@@ -19,11 +19,8 @@ void jack_bauer(void)
 			{
 				for (MM = 0; MM <= 9; MM++)
 				{
-					if (H == 2 && HH == 3 && M == 5 && MM == 9)
+					if (H >= 2 && HH >= 3 && M >= 5 && MM >= 9)
 					{
-						break;
-						break;
-						break;
 						break;
 					}
 					_putchar('0' + H);

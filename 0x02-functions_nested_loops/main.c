@@ -8,6 +8,6 @@
 		/***main.c***/
 int main(void)
 {
-	print_alphabet();
+	_islower('v');	
 	return (0);
 }

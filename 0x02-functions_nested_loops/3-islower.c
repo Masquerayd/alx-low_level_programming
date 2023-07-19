@@ -3,6 +3,8 @@
 /**
  * _islower - check character size
  *
+ * @c: int character
+ *
  * Description: the functions checks if the inputs are small letter characters
  *
  * Return: always zero

@@ -3,7 +3,7 @@
 
 /**
   *main - returns abs
-  *@a: int a 
+  *@a: int a
   *return: returns abs of a
   */
 int _abs(int a)

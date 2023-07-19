@@ -15,7 +15,7 @@ void jack_bauer(void)
 	{
 		for (HH = 0; HH <= 3; HH++)
 		{
-			for (M = 0; M <= 6; M++)
+			for (M = 0; M <= 5; M++)
 			{
 				for (MM = 0; MM <= 9; MM++)
 				{

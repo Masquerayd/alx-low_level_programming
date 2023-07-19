@@ -1,4 +1,5 @@
 #include "main.h"
+#include <inttypes.h>
 
 /**
   *print_last_digit - print last value
@@ -10,11 +11,13 @@ int print_last_digit(int a)
 {
 	int b;
 	int c;
+	intmax_t d = imaxabs(a);
 
-	b = a % 10;
+	b = d % 10;
+
 	for (c = 0; c <= 9; c++)
 	{
-		if(c == b)
+		if (c == b)
 		{
 		_putchar('0' + c);
 		}

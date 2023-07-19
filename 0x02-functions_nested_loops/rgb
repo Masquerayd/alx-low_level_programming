@@ -1,9 +1,0 @@
-#!/bin/bash
-read -p "please enter file name: " fnam
-printf '\n++++++++++++++betty+++++++++++++++\n\n'
-betty $fnam
-printf "\n++++++++++++++GCC+++++++++++++++++\n\n"
-gcc main.c $fnam 
-printf "\n+++++++++++file_output++++++++++++\n\n"
-./a.out
-~/.gita

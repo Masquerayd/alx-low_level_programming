@@ -8,19 +8,23 @@ void more_numbers(void)
 {
 	int ch;
 	int i = 0;
+	int b;
 
 	while (i < 10)
 	{
 		i++;
 		for (ch = 0; ch <= 14; ch++)
 		{
-			if (ch <= 9)
+			b = ch;
+
+			if (b > 9)
 			{
-				_putchar('0' + ch);
+				b = 1;
 			}
-			else if (ch > 9)
+			_putchar('0' + b);
+
+			if (ch > 9)
 			{
-				_putchar('1');
 				_putchar('0' + ch - 10);
 			}
 		}

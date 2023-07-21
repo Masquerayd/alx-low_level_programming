@@ -18,6 +18,6 @@ int _isupper(int c)
 			return (1); /* returns 1 if alphabet is a capital*/
 		}
 	}
-	return (0); /* returns 0 if aplhabet is not a capital*/
+	2eturn (0); /* returns 0 if aplhabet is not a capital*/
 
 }

@@ -13,9 +13,9 @@ void more_numbers(void)
 	while (i < 10)
 	{
 		i++;
-		for (ch = 0; ch <= 14; ch++)
+		for (ch = '0'; ch <= '14'; ch++)
 		{
-			b = ch;
+/*			b = ch;
 
 			if (b > 9)
 			{
@@ -26,7 +26,9 @@ void more_numbers(void)
 			if (ch > 9)
 			{
 				_putchar('0' + ch - 10);
+
 			}
+*/			_putchar(ch)
 		}
 		_putchar('\n');
 	}

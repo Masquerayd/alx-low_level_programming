@@ -11,13 +11,13 @@ int _isupper(int c)
 {
 	char ch; /* variable init*/
 
-	for (ch = 'A'; ch <= 'Z'; ch++)
+	for (ch = 65; ch <= 90; ch++)
 	{
 		if (ch == c)
 		{
 			return (1); /* returns 1 if alphabet is a capital*/
 		}
 	}
-	2eturn (0); /* returns 0 if aplhabet is not a capital*/
+	return (0); /* returns 0 if aplhabet is not a capital*/
 
 }

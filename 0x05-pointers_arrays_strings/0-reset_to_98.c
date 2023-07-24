@@ -2,8 +2,8 @@
 
 /**
   *reset_to_98 - reset the variable to 98
-  *
-  * return: always 0
+  *@n: int pointer n
+  *return: always 0
   */
 
 void reset_to_98(int *n)

@@ -10,12 +10,15 @@
   */
 int _strlen(char *s)
 {
-	wchar_t *str = (wchar_t *)&s;
-	int a;
+	int max = 0;
 
-	a = wcslen(str);
-	printf("a: %d\n", a);
 
-	return (a + 2);
+	while ( *(s + max) != '\0')
+	{
+	
+		max++;
+	}
+	return (max);
+
 }
 

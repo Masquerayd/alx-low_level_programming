@@ -16,11 +16,11 @@ void puts2(char *s)
 	{
 		if ((max % 2) == 0)
 		{
-			printf("%c", *(s + max));
+			_putchar(*(s + max));
 			b++;
 		}
 		max++;
 
 	}
-	puts("\n");
+	_putchar('\n');
 }

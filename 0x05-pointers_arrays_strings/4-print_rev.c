@@ -20,8 +20,10 @@ void print_rev(char *s)
 	/* then uses max to print in reverse */
 	while ((max - i) != -1)
 	{
-		_putchar(*(s + max - i));
-
+		if (max > 0)
+		{
+			_putchar(*(s + max - i));
+		}
 		i++;
 	}
 	_putchar('\n');

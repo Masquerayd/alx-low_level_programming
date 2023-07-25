@@ -17,7 +17,6 @@ void puts2(char *s)
 		if ((max % 2) == 0)
 		{
 			*(s + b) = *(s + max);
-			
 			b++;
 		}
 		max++;

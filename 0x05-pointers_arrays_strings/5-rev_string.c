@@ -10,7 +10,7 @@
 void rev_string(char *s)
 {
 	int max = 0;
-	char temp[200];
+	char temp[10000];
 	int a = 0;
 
 	while (*(s + max) != '\0')

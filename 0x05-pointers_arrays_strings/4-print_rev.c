@@ -13,10 +13,11 @@ void print_rev(char *s)
 	int i = 1;
 
 	/* uses while loop to get size of array */
-	do {
-		max++;
-	} while (*(s + max) != '\0');
+	while (*(s + max) != '\0')
 
+	{
+		max++;
+	}
 	/* then uses max to print in reverse */
 	while ((max - i) != -1)
 	{

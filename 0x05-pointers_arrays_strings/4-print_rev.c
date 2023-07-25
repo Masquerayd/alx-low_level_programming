@@ -10,21 +10,19 @@ void print_rev(char *s)
 {
 	/*init variables*/
 	int max = 0;
-	int i = 0;
+	int i = 1;
 
 	/* uses while loop to get size of array */
-	do	
-	{
+	do {
 		max++;
-	}while (*(s + max) != '\0');
-
+	} while (*(s + max) != '\0');
 
 	/* then uses max to print in reverse */
 	while ((max - i) != -1)
 	{
 		_putchar(*(s + max - i));
+
 		i++;
 	}
-	/*_putchar('\n');*/
+	_putchar('\n');
 }
-

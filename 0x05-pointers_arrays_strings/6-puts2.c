@@ -9,20 +9,18 @@
 
 void puts2(char *s)
 {
-	int max = 2;
+	int max = 0;
 	int b = 0;
 
 	while (*(s + max) != '\0')
 	{
 		if ((max % 2) == 0)
 		{
-			*(s + b) = *(s + max);
+			printf("%c", *(s + max));
 			b++;
 		}
 		max++;
 
 	}
-	*(s + b) = '\0';
-
-
+	puts("\n");
 }

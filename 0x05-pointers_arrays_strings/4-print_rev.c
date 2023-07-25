@@ -19,7 +19,7 @@ void print_rev(char *s)
 	}
 
 	/* then uses max to print in reverse */
-	while ((max - i) != 0)
+	while (*(s + max - i) != *(s))
 	{
 		_putchar(*(s + max - i));
 		i++;

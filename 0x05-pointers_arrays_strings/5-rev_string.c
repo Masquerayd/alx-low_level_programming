@@ -10,12 +10,13 @@
 void rev_string(char *s)
 {
 	int max = 0;
-	char temp[10000];
+	char temp[10000]; /* created an array with 10000 byte */
 	int a = 0;
 
 	while (*(s + max) != '\0')
 	{
 		temp[max] = *(s + max);
+		max++;
 		max++;
 
 	}

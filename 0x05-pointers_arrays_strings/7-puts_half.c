@@ -22,9 +22,19 @@ void puts_half(char *s)
 
 	while (*(s + max) != '\0')
 	{
-		if (max >= (len / 2))
+		if (len % 2 == 0)
 		{
-			_putchar(*(s + max));
+			if (max >= (len / 2))
+			{
+				_putchar(*(s + max));
+			}
+		}
+		else
+		{
+			if (max > (len / 2))
+			{
+				_putchar(*(s + max));
+			}
 		}
 		max++;
 	}

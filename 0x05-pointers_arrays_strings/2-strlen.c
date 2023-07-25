@@ -13,9 +13,8 @@ int _strlen(char *s)
 	int max = 0;
 
 
-	while ( *(s + max) != '\0')
+	while (*(s + max) != '\0')
 	{
-	
 		max++;
 	}
 	return (max);

@@ -1,10 +1,11 @@
 #include "main.h"
 
-/*_strcat - the program combines two strings
+/**
+ *_strcat - the program combines two strings
  *
  * @dest: char pointer
  * @src: char pointer
- * return: nothing
+ * Return: returns @dest
  */
 
 char *_strcat(char *dest, char *src)

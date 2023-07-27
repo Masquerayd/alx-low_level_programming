@@ -9,12 +9,12 @@
 
 char *_strcat(char *dest, char *src)
 {
-	int dest_legnth = 0;
+	int dest_length = 0;
 
 
 	while (*dest != '\0')
 	{
-		dest_legnth++;
+		dest_length++;
 		dest++;
 	}
 
@@ -23,8 +23,13 @@ char *_strcat(char *dest, char *src)
 		*dest = *src;
 		dest++;
 		src++;
+		dest_length++;
 
 	}
+
+	*dest = '\0';
+	dest = dest - dest_length;
+
 
 	return (dest);
 }

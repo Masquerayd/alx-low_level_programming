@@ -7,8 +7,8 @@
   */
 int main(void)
 {
-	int number = 1231952;
-	int oddn;
+	long int number = 612852475143;
+	long int oddn;
 
 
 	while (number % 2 == 0)
@@ -24,7 +24,7 @@ int main(void)
 		}
 	}
 
-	printf("%d", number);
+	printf("%ld", number);
 	printf("\n");
 	return (0);
 

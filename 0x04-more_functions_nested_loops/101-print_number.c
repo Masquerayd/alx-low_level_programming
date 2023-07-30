@@ -28,6 +28,4 @@ void print_number(int n)
 		mul /= 10;
 
 	}
-	_putchar('\n');
-
 }

@@ -12,7 +12,7 @@ void print_number(int n)
  *	unsigned int mul = 10;
  *	unsigned int num2 = 0;
  */
-	int k = n;
+	unsigned int k = n;
 
 
 	if (n < 0)

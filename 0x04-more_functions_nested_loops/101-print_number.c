@@ -8,8 +8,10 @@
   */
 void print_number(int n)
 {
-/*	unsigned int mul = 10;
-	unsigned int num2 = 0;*/
+/*
+ *	unsigned int mul = 10;
+ *	unsigned int num2 = 0;
+ */
 	int k = n;
 
 
@@ -18,34 +20,11 @@ void print_number(int n)
 		k = -n;
 		_putchar('-');
 	}
-	
 
-
-/*	while (mul < k)
+	if (k / 10 != 0)
 	{
-		mul = 10 * mul;
+		print_number(k / 10);
 	}
-
-	while (mul >= 10)
-	{
-		if (k == 10)
-		{
-			
-			_putchar('1');
-		}
-		num2 = ((k % mul) / (mul / 10));
-		_putchar('0' + num2);
-		mul /= 10;
-	}*/
-
-	printf("outside if\n");
-	if (k / 10 >= 0)
-	{
-		printf("inside if\n");
-
-		print_number(k/10); 
-	}
-	printf("printing char\n");
 
 	_putchar('0' + k % 10);
 

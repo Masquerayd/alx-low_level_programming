@@ -4,8 +4,8 @@
 /**
   * _pow_recursion - return the value of x raised to the power
   *
-  *@x
-  *@y
+  *@x: int x
+  *@y: int y
   *Return: the power raised
   */
 

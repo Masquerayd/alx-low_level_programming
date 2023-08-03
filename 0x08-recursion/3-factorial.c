@@ -6,12 +6,16 @@
   *Return: factorial
   */
 
-unsigned int factorial(unsigned int n)
+long int factorial(long int n)
 {
-	if (n <= 1)
+	if (n < 0)
+	{
+		return (-1);
+	}
+	if (n == 0)
 	{
 		return (1);
 	}
-	return (n * factorail(n - 1));
+	return (n * factorial(n - 1));
 }
 

@@ -10,10 +10,6 @@ int main(void)
 {
 	int r;
 
-	r = factorial(1);
-	printf("%d\n", r);
-	r = factorial(5);
-	printf("%d\n", r);
 	r = factorial(12);
 	printf("%d\n", r);
 	r = factorial(-98);

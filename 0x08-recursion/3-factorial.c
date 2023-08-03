@@ -6,7 +6,7 @@
   *Return: factorial
   */
 
-long int factorial(long int n)
+int factorial(int n)
 {
 	if (n == 0)
 	{
@@ -16,9 +16,9 @@ long int factorial(long int n)
 	{
 		return (-1);
 	}
-	else 
+	else
 	{
-	return (n * factorial(n - 1));
+		return (n * factorial(n - 1));
 	}
 	return (0);
 }

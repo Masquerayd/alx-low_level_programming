@@ -27,7 +27,7 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 		dest++;
 	}
 
-	while (count < n)
+	while (count < n || *dest != '\0')
 	{
 /*
  *add src values to dest for each memory

@@ -11,7 +11,7 @@
 
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	int length = 0;
+	unsigned int length = 0;
 	unsigned int count = 0;
 	char temp[10000] = {0};
 

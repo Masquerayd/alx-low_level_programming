@@ -40,10 +40,10 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 /*
  *add src values to dest for each memory
  */
-		*(dest + length + count) = temp[count];
+		*(dest + count) = temp[count];
 		count++;
 	}
-	*(dest + length + count) = '\0';
+	*(dest + count) = '\0';
 	return (dest);
 }
 

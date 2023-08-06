@@ -43,6 +43,7 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 		*(dest + length + count) = temp[count];
 		count++;
 	}
+	*(dest + length + count) = '\0';
 	return (dest);
 }
 

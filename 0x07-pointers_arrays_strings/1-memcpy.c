@@ -15,7 +15,7 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 	unsigned int count = 0;
 	char temp[10000] = {0};
 
-	while (*(dest + count) != 0)
+	while (*(dest + count) != '\0')
 	{
 		length++;
 		count++;
@@ -35,7 +35,7 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 
 	count = 0;
 
-	while (count < n || *(dest + count) != '\0')
+	while (count < n)
 	{
 /*
  *add src values to dest for each memory
@@ -43,7 +43,6 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 		*(dest + count) = temp[count];
 		count++;
 	}
-	*(dest + count) = '\0';
 	return (dest);
 }
 

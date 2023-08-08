@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * _strncat - copies n most bytes from src to dest
+ * _strncpy - copies n most bytes from src to dest
  * @dest: char pointer destination fron character
  * @src: char pointer source for character
  * @n: int n , for amount of char to copy
  * Return: a pointer dest with nth src characters
  */
 
-char *_strncat(char *dest, char *src, int n)
+char *_strncpy(char *dest, char *src, int n)
 {
 	int count = 0;
 	char temp[5000] = {0};
@@ -36,8 +36,9 @@ char *_strncat(char *dest, char *src, int n)
 /*
  * copies the nth characters from the temp array to dest
  */
-		*(dest + length + i) = temp[i];
+		*(dest + i) = temp[i];
 	}
-	*(dest + length + i) = '\0';
+	*(dest + i) = '\0';
+
 	return (dest);
 }

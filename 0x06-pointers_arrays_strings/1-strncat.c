@@ -5,26 +5,29 @@
  *
  * @dest: char pointer
  * @src: char pointer
+ * @n: int n
  * Return: returns @dest
  */
 
-char *_strcat(char *dest, char *src)
+char *_strncat(char *dest, char *src, int n)
 {
-	/* declaring the variable that will be used to get the length of a string */
-	int dest_length = 0; 
+	int dest_length = 0;
+	int count = 0;
 
-/*while loop is used to calculate the length of *dest */
+/* counts the length of dest and increments the address to null */
 	while (*dest != '\0')
 	{
-		dest_length++; /* incrementing */
+		dest_length++;
 		dest++;
 	}
 
-	while (*src != '\0')
+
+	while (count <= n)
 	{
 		*dest = *src;
 		dest++;
 		src++;
+		count++;
 		dest_length++;
 
 	}

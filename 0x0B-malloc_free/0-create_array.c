@@ -31,13 +31,17 @@ char *create_array(unsigned int size, char c)
 /*
  * checks if they was an error allocating memory
  */
-	while (test_size <= size)
+	if (c != '\0')
 	{
-		if (*array == '\0' || size == 0)
+
+		while (test_size <= size)
 		{
-			return ('\0');
+			if (*array == '\0' || size == 0)
+			{
+				return ('\0');
+			}
+			test_size++;
 		}
-		test_size++;
 	}
 	return (array);
 }

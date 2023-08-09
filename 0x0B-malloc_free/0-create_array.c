@@ -16,7 +16,7 @@ char *create_array(unsigned int size, char c)
 /*
  * creates a dynamics memory of size size
  */
-	array = malloc(sizeof(*array) * size);
+	array = malloc(sizeof(char) * size);
 /*
  * appends char c to array size times
  */

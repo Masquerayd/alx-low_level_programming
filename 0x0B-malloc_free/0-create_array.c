@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdlib.h>
-#include <stdio.h>
 
 /**
  * create_array - creates an array of chars and initializes them
@@ -12,7 +11,6 @@
 char *create_array(unsigned int size, char c)
 {
 	char *array;
-	unsigned int test_size = 0;
 	unsigned int count = 0;
 
 /*
@@ -34,13 +32,13 @@ char *create_array(unsigned int size, char c)
 	if (c != '\0')
 	{
 
-		while (test_size <= size)
+		if (array == NULL || size == 0)
 		{
-			if (array[test_size] == '\0' || size == 0)
-			{
-				return ('\0');
-			}
-			test_size++;
+			return ('\0');
+		}
+		else
+		{
+			return (array);
 		}
 	}
 	return (array);

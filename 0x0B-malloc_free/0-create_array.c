@@ -36,7 +36,7 @@ char *create_array(unsigned int size, char c)
 
 		while (test_size <= size)
 		{
-			if (*array == '\0' || size == 0)
+			if (*array[test_size] == '\0' || size == 0)
 			{
 				return ('\0');
 			}

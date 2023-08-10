@@ -1,4 +1,4 @@
 #!/bin/bash
 
 cc -c *.c
-ar rc liball.a *.o
+ar rc libmy.a *.o

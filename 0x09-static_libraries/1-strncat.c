@@ -1,10 +1,10 @@
 /**
- * _strncpy - string cast
+ * _strncat - string cast
  * @dest: char dest
  * @src: char src
  * @n: int n
  * Return: char
  */
-char *_strncpy(char *dest, char *src, int n)
+char *_strncat(char *dest, char *src, int n)
 {
 }

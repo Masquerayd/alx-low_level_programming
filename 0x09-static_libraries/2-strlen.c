@@ -1,3 +1,8 @@
-char *_strchr(char *s, char c)
+/**
+ * _strlen - string cast
+ * @s: char s
+ * Return: int
+ */
+int _strlen(char *s)
 {
 }

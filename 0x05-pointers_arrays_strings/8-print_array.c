@@ -1,5 +1,7 @@
 #include "main.h"
 
+void print_number(int n);
+
 /**
   *print_array
   *
@@ -11,27 +13,41 @@
 void print_array(int *a, int n)
 {
 	int i = 0;
-	int tmp = 0;
 
-	while (i <= n)
+	while (i < n)
 	{
-		tmp = 0;
-
-		if (*(a + i) < 0)
+	
+		print_number(a[i]);
+		if (i < n - 1)
 		{
-			_putchar('-');
-			_putchar(tmp);
-		}
-		else
-		{
-			_putchar(*(a + i));
-		}
-
-		if (i < n)
-		{
-			_putchar(',');
+		_putchar(',');
 		}
 		i++;
 	}
 	_putchar('\n');
+}
+
+/**
+  *print_number - prints numbers
+  *@n: int n
+  *Return: nothing
+  */
+void print_number(int n)
+{
+	unsigned int k = n;
+
+
+	if (n < 0)
+		{
+			k = -n;
+			_putchar('-');
+		}
+
+	if (k / 10 != 0)
+		{
+			print_number(k / 10);
+		}
+
+		_putchar('0' + k % 10);
+
 }

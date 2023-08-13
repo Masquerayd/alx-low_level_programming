@@ -52,7 +52,7 @@ char *_strdup(char *str)
 /*
  * checking if malloc returns null
  */
-	if (dup == NULL)
+	if (dup == NULL || *(str) == NULL)
 	{
 		return ('\0');
 	}

@@ -22,11 +22,13 @@ int _strlen(char *str)
 	{
 		return (0);
 	}
+
+
 	while (*(str + length) != '\0')
 	{
 		length++;
 	}
-	return (length - 1);
+	return (length);
 }
 
 /**
@@ -41,7 +43,7 @@ char *_strdup(char *str)
 /*
  * creating a new pointer and allocating space for it in memory
  */
-	char *dup = (char *) malloc(sizeof(char) * _strlen(str));
+	char *dup; 	
 	int count = 0;
 /*
  * checks for a Null pointer
@@ -50,6 +52,8 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
+	dup = malloc(sizeof(char) * _strlen(str));
+
 
 /*
  * checking if string is empty
@@ -60,6 +64,7 @@ char *_strdup(char *str)
 		dup[0] = '\0';
 		return (dup);
 	}
+
 /*
  * checking if malloc returns null
  */

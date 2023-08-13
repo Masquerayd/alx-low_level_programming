@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 #include <string.h>
-#define SIZE 10000
+#include <stdio.h>
 
 
 /*
@@ -18,11 +18,16 @@ int _strlen(char *str)
 {
 	int length = 0;
 
+	if (str == NULL)
+	{
+		return (0);
+	}
+	
 	while (*(str + length) != '\0')
 	{
 		length++;
 	}
-	return (length);
+	return (length - 1);
 }
 
 /**
@@ -39,6 +44,13 @@ char *_strdup(char *str)
  */
 	char *dup = (char *) malloc(sizeof(char) * _strlen(str));
 	int count = 0;
+/*
+ * checks for a Null pointer
+ */
+	if (str == NULL)
+	{
+		return (NULL);
+	}
 
 /*
  * checking if string is empty 
@@ -52,7 +64,7 @@ char *_strdup(char *str)
 /*
  * checking if malloc returns null
  */
-	if (dup == NULL || *(str) == '\0')
+	if (dup == NULL)
 	{
 		return ('\0');
 	}

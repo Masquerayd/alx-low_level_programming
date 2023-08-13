@@ -22,7 +22,7 @@ int _strlen(char *str)
 	{
 		length++;
 	}
-	return (length - 1);
+	return (length);
 }
 
 /**
@@ -39,6 +39,16 @@ char *_strdup(char *str)
  */
 	char *dup = (char *) malloc(sizeof(char) * _strlen(str));
 	int count = 0;
+
+/*
+ * checking if string is empty 
+ */
+
+	if (*(str) == '\0')
+	{
+		dup[0] = '\0';
+		return (dup);
+	}
 /*
  * checking if malloc returns null
  */
@@ -53,6 +63,10 @@ char *_strdup(char *str)
 	{
 		dup[count] = *(str + count);
 		count++;
+		if ((str + count) == NULL)
+		{
+			return (NULL);
+		}
 	}
 	dup[count] = '\0';
 	return (dup);

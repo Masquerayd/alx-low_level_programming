@@ -18,6 +18,15 @@ char *create_array(unsigned int size, char c)
  */
 	array = malloc(sizeof(char) * size);
 /*
+ * checks if array == NULL and if size is == 0
+ */
+
+	if (array == NULL || size == 0)
+	{
+		return ('\0');
+	}
+
+/*
  * appends char c to array size times
  */
 	for (count = 0; count < size; count++)
@@ -29,18 +38,6 @@ char *create_array(unsigned int size, char c)
 /*
  * checks if they was an error allocating memory
  */
-	if (c != '\0')
-	{
-
-		if (array == NULL || size == 0)
-		{
-			return ('\0');
-		}
-		else
-		{
-			return (array);
-		}
-	}
 	return (array);
 }
 

@@ -3,7 +3,7 @@
 void print_number(int n);
 
 /**
-  *print_array
+  *print_array - prints array
   *
   *@n: int n
   *@a: int a
@@ -16,7 +16,6 @@ void print_array(int *a, int n)
 
 	while (i < n)
 	{
-	
 		print_number(a[i]);
 		if (i < n - 1)
 		{
@@ -39,16 +38,16 @@ void print_number(int n)
 
 
 	if (n < 0)
-		{
-			k = -n;
-			_putchar('-');
-		}
+	{
+		k = -n;
+		_putchar('-');
+	}
 
 	if (k / 10 != 0)
-		{
-			print_number(k / 10);
-		}
+	{
+		print_number(k / 10);
+	}
 
-		_putchar('0' + k % 10);
+	_putchar('0' + k % 10);
 
 }

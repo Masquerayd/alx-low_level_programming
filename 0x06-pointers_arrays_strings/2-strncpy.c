@@ -10,35 +10,22 @@
 
 char *_strncpy(char *dest, char *src, int n)
 {
-	int count = 0;
 	char temp[5000] = {0};
 	int i;
-	int length = 0;
-
-	while (*(src + count) != '\0')
-	{
-/*
- * copies the string src to a temp array
- */
-		temp[count] = *(src + count);
-		count++;
-	}
-	while (*(dest + length) != '\0')
-	{
-/*
- * calculates the legnth of dest
- */
-		length++;
-	}
 
 	for (i = 0; i < n && *(src + i) != '\0'; i++)
 	{
 /*
  * copies the nth characters from the temp array to dest
  */
+		temp[i] = *(src + i);
 		*(dest + i) = temp[i];
 	}
-	*(dest + i) = '\0';
+
+	for (; i < n; i++)
+	{
+		*(dest + i) = '\0';
+	}
 
 	return (dest);
 }

@@ -22,7 +22,6 @@ int _strlen(char *str)
 	{
 		return (0);
 	}
-	
 	while (*(str + length) != '\0')
 	{
 		length++;
@@ -53,7 +52,7 @@ char *_strdup(char *str)
 	}
 
 /*
- * checking if string is empty 
+ * checking if string is empty
  */
 
 	if (*(str) == '\0')

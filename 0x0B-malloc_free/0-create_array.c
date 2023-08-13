@@ -35,9 +35,6 @@ char *create_array(unsigned int size, char c)
 
 	}
 
-/*
- * checks if they was an error allocating memory
- */
 	return (array);
 }
 

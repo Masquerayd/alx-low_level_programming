@@ -43,7 +43,7 @@ char *_strdup(char *str)
 /*
  * creating a new pointer and allocating space for it in memory
  */
-	char *dup; 	
+	char *dup;
 	int count = 0;
 /*
  * checks for a Null pointer

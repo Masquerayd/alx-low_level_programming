@@ -14,22 +14,23 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	unsigned int count = 0;
 	char *string;
 
-	printf("%d",n);
 
 	va_start(list, n);
 	while (count < n)
 	{
 		string = va_arg(list, char *);
+		if (string != NULL)
+		{
+			if ((count > 0 && count <= (n - 1)) && separator != NULL)
+			{
+				printf("%s", separator);
+			}
+			printf("%s", string);
+		}
 		if (string == NULL)
 		{
 			printf("nil");
-		}
-		else
-		{
-			if ((count == 2 || count < (n - 1)) && separator != NULL)
-			{
-				printf("%s", separator);
-		}
+
 
 		}
 		count++;

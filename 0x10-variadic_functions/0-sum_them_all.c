@@ -38,6 +38,11 @@ int sum_them_all(const unsigned int n, ...)
 		temp = va_arg(numbers, int);
 		sum = sum + temp;
 	}
+	
+/*
+ * We are now freeing va_list
+ */
+	va_end(numbers);
 
 	return (sum);
 }

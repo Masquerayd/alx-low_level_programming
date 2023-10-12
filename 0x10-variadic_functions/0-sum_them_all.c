@@ -4,7 +4,7 @@
 
 /**
  * sum_them_all - Function returns the sum of all its parameters
- * @n: first int 
+ * @n: first int
  * Return: Returns the sum of all the arg
  */
 
@@ -19,17 +19,17 @@ int sum_them_all(const unsigned int n, ...)
 	int temp;
 
 /*
- * start the iteration process of numbers 
+ * start the iteration process of numbers
  */
 	va_start(numbers, n);
 
 /*
- * The for loops is used to sum up all the values 
+ * The for loops is used to sum up all the values
  * every time numbers is accessed it iterates the the next argument
  */
 	for (i = 0; i < n; i++)
 	{
-	 	temp = va_arg(numbers, int);
+		temp = va_arg(numbers, int);
 		sum = sum + temp;
 	}
 

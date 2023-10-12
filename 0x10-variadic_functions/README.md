@@ -31,7 +31,7 @@ void printargs(int arg1, ...)
 	int i;
 
 	va_start(ap, arg1); /* This starts the iteration procress from the first argumets */
-	for (i = arg; i >= 0; i = va_arg(ap, int)) 
+	for (i = arg1; i >= 0; i = va_arg(ap, int)) 
 		printf("%d ", i);
 	va_end(ap):
 	putchar('\n');

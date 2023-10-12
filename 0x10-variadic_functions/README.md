@@ -27,11 +27,11 @@ Lets look at example code of how variadic functions are used.
 
 void printargs(int arg1, ...)
 {
-	va_list ap;
+	va_list ap; /* This creates a varible that is used for iterating arguments */
 	int i;
 
-	va_start(ap, arg1);
-	for (i = arg; i >= 0; i = va_arg(ap, int))
+	va_start(ap, arg1); /* This starts the iteration procress from the first argumets */
+	for (i = arg; i >= 0; i = va_arg(ap, int)) 
 		printf("%d ", i);
 	va_end(ap):
 	putchar('\n');

@@ -42,6 +42,7 @@ int sum_them_all(const unsigned int n, ...)
  * We are now freeing va_list
  */
 	va_end(numbers);
+	_putchar('\n');
 
 	return (sum);
 }

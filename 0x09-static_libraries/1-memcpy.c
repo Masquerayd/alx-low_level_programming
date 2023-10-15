@@ -1,9 +1,13 @@
 /**
- * _isdigit - checks for capital letter
+ * _memcpy - checks for capital letter
  *
- * @c: int c
- * Return: a int
+ * @dest: char dest
+ * @src: char src
+ * @n: unsgined int n
+ * Return: char
  */
-int _isdigit(int c)
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
 }
+
+

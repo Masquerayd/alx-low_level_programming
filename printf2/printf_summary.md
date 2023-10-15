@@ -17,10 +17,10 @@ In the example above '"I have %d rands"' is the **Format string**, and **%d** is
 
 The format string is then proccessed by printf and all the spercifers are replaced with the actual values from the arguments given. so to summirse this in bullet form 
 
-- Obtian the Format string and the Argumets passed
-* Proccess the Spercifiers in the format string 
-* Get rid of all the Spercifiers and Replace them with the actaul values
-+ print to the console
+1. Obtian the Format string and the Argumets passed
+1. Proccess the Spercifiers in the format string 
+1. Get rid of all the Spercifiers and Replace them with the actaul values
+1. print to the console
 
 ## Argument Handling
 

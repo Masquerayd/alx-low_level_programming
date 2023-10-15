@@ -8,6 +8,6 @@ gcc -c *.c
 
 # second we will create an archive called liball.a
 
-ar rc libmy.a *.o
+ar rc liball.a *.o
 
 

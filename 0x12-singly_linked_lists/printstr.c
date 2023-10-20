@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "main.h"
+#include "lists.h"
 
 /**
  * printstr - prints the string
@@ -7,16 +7,14 @@
  * Return: nothing
  */
 
-void printstr(const char *str)
+void printstrnlen(const char *str,unsigned int len)
 {
 	if (str == NULL)
 	{
-		printf("[0] (nil)");
+		printf("[0] (nil)\n");
 	}
-	else{
-
-		printf("%s", str);
+	else
+	{
+		printf("[%d] %s\n",len, str);
 	}
-
-
 }

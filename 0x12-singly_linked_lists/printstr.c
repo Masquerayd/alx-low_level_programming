@@ -7,7 +7,7 @@
  * Return: nothing
  */
 
-void printstrnlen(const char *str,unsigned int len)
+void printstrnlen(const char *str, unsigned int len)
 {
 	if (str == NULL)
 	{
@@ -15,6 +15,6 @@ void printstrnlen(const char *str,unsigned int len)
 	}
 	else
 	{
-		printf("[%d] %s\n",len, str);
+		printf("[%d] %s\n", len, str);
 	}
 }

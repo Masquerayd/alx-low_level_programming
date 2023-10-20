@@ -11,7 +11,7 @@ size_t print_list(const list_t *h)
 
 	while (h->next != NULL)
 	{
-		printstrnlen(h->str,h->len);
+		printstrnlen(h->str, h->len);
 		h = h->next;
 		numNodes++;
 
@@ -23,10 +23,6 @@ size_t print_list(const list_t *h)
 		{
 			return (numNodes);
 		}
-
-		
 	}
 	return (numNodes);
 }
-
-	

@@ -25,7 +25,7 @@ void printstrl(const char *str, unsigned int len)
  * @h: pointer to the list to be printed
  * Return: the number of nodes
  */
-size_t print_list(list_t *h)
+size_t list_len(list_t *h)
 {
 	int numNodes = 0;
 

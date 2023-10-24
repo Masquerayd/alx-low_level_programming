@@ -20,7 +20,7 @@ typedef struct list_s
 } list_t;
 
 
-size_t print_list(list_t *h);
+size_t list_len(list_t *h);
 void printstrl(const char *str, unsigned int len);
 
 #endif

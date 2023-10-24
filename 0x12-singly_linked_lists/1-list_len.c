@@ -21,7 +21,7 @@ void printstrl(const char *str, unsigned int len)
 }
 
 /**
- * print_list - prints all the elemts of a list_t
+ * list_len - prints all the elemts of a list_t
  * @h: pointer to the list to be printed
  * Return: the number of nodes
  */

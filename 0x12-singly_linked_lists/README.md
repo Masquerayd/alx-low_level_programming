@@ -49,3 +49,9 @@ int main(int argc, const char * argc[])
 	printf("Hello,World!\n");
 	return 0;
 }
+
+** Print the address of a struct
+when printing the address of a struct using the format spercifier `%p`, please add `(void*)arg_struct`c infront of the sturcture argument here is an example
+
+```c
+	printf("%p\n", (void*)arg_struct

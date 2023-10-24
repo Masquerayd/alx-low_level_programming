@@ -12,7 +12,7 @@ size_t print_list(list_t *h)
 
 	while (h != NULL)
 	{
-		printstrnlen(h->str, h->len);
+printstrl(h->str, h->len);
 		numNodes++;
 
 

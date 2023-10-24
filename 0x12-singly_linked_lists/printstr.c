@@ -7,7 +7,7 @@
  * Return: nothing
  */
 
-void printstrnlen(const char *str, unsigned int len)
+void printstrl(const char *str, unsigned int len)
 {
 	if (str == NULL)
 	{

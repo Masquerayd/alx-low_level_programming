@@ -21,6 +21,6 @@ typedef struct list_s
 
 
 size_t print_list(list_t *h);
-void printstrnlen(const char *str, unsigned int len);
+void printstrl(const char *str, unsigned int len);
 
 #endif

@@ -10,7 +10,7 @@ void array_iterator(int *array, size_t size, void(*action)(int))
 {
 	size_t count = 0;
 
-	if (action == NULL && array == NULL)
+	if (action == NULL || array == NULL)
 	{
 		return;
 	}

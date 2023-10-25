@@ -9,11 +9,9 @@ void printstr(char *str)
 	if (str == NULL)
 	{
 		printf("(nil)");
+		return;
 	}
-	else
-	{
-		printf("%s", str);
-	}
+	printf("%s", str);
 }
 
 

@@ -7,14 +7,14 @@
 
 /**
  * struct listint_t - list of elements
- * @num: integer
- * @nextnode: pointer to the next node
+ * @n: integer
+ * @next: pointer to the next node
  */
 
-typedef struct listint_a
+typedef struct listint_t
 {
 	int n;
-	struct listint_a *next;
+	struct listint_t *next;
 } listint_t;
 
 

@@ -1,4 +1,4 @@
-# Building C libraries
+# building C libraries
 
 A `Library` is a file that contains several object files. Using these Labraries it makes it easier  for the compiler to find functions , variables and so on.
 
@@ -40,4 +40,4 @@ Once the library has been compile , it can now be used to compile programs using
 ```
 
 - **-L** - tells 
-
+# Building C libraries                                                                                                          A `Library` is a file that contains several object files. Using these Labraries it makes it easier  for the compiler to find functions , variables and so on.                                                                                                   

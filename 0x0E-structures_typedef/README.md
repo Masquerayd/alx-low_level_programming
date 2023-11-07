@@ -108,3 +108,26 @@ int main(void)
 	return (0);
 }
 ```
+
+## Documentation for structs 
+```c
+/**
+ * struct my_struct - Short description
+ * @a: First member
+ * @b: Second member
+ *
+ * Description: Longer description
+ */
+struct my_struct
+{
+	int a;
+	int b;
+	/**
+	 * @c: This is longer description of C
+	 *
+	 * Description: You can use paragraphs to describe arguments
+	 * using this method.
+	 */
+	int c;
+};
+```c

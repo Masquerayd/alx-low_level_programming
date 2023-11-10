@@ -11,7 +11,7 @@ void print_string(char *str)
 		printf("(nil)");
 		return;
 	}
-	printf("%s",str);
+	printf("%s", str);
 }
 
 /**
@@ -20,45 +20,29 @@ void print_string(char *str)
  */
 void print_num(int num)
 {
-	printf("%d",num);
+	printf("%d", num);
 }
 
 /**
- * print_float - prints float number 
+ * print_float - prints float number
  * @flo: float num
  */
 void print_float(double flo)
 {
-	printf("%f",flo);
+	printf("%f", flo);
 }
 
 /**
- * print_char - prints char 
+ * print_char - prints char
  * @cha: character
  */
 void print_char(char cha)
 {
-	printf("%c",cha);
-}
-/**
- * str_len - gives the string length
- * @str: string
- * Return: returns string length
- */
-int str_len(char *str)
-{
-	int count = 0;
-
-	while (str[count] != '\0')
-	{
-		count++;
-	}
-	return (count);
+	printf("%c", cha);
 }
 
-
 /**
- * print_all - prints all the arguments 
+ * print_all - prints all the arguments
  * @format: format of argunebt
  */
 
@@ -70,11 +54,10 @@ void print_all(const char *const format, ...)
 
 	va_start(args, format);
 
-	
-	while(format[i] != '\0')
+	while (format[i] != '\0')
 	{
 		flag = 0;
-		switch(format[i])
+		switch (format[i])
 		{
 			case 'c':
 				print_char(va_arg(args, int));
@@ -94,7 +77,7 @@ void print_all(const char *const format, ...)
 				flag++;
 				break;
 		}
-		if(flag == 1 && format[i + 1] != '\0')
+		if (flag == 1 && format[i + 1] != '\0')
 		{
 			printf(", ");
 		}

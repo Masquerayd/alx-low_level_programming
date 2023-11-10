@@ -49,18 +49,14 @@ void print_char(char cha)
 void print_all(const char *const format, ...)
 {
 	va_list args;
-	int i = 0;
-	int flag = 0;
+	int i = 0, flag = 0;
 
 	if (format == NULL)
 	{
 		printf("\n");
 		return;
 	}
-
 	va_start(args, format);
-
-
 	while (format[i] != '\0' && format != NULL)
 	{
 		flag = 0;
@@ -71,9 +67,6 @@ void print_all(const char *const format, ...)
 				flag++;
 				break;
 			case 'i':
-				print_num(va_arg(args, int));
-				flag++;
-				break;
 			case 'f':
 				print_float(va_arg(args, double));
 				flag++;
@@ -82,7 +75,6 @@ void print_all(const char *const format, ...)
 			case 's':
 				print_string(va_arg(args, char *));
 				flag++;
-				break;
 		}
 		while (flag == 1 && format[i + 1] != '\0')
 		{

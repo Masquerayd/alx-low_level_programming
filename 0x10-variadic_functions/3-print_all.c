@@ -52,7 +52,7 @@ void print_all(const char *const format, ...)
 	int i = 0;
 	int flag = 0;
 
-	while (format == NULL)
+	if (format == NULL)
 	{
 		return;
 	}
@@ -83,9 +83,10 @@ void print_all(const char *const format, ...)
 				flag++;
 				break;
 		}
-		if (flag == 1 && format[i + 1] != '\0')
+		while (flag == 1 && format[i + 1] != '\0')
 		{
 			printf(", ");
+			break;
 		}
 		i++;
 	}

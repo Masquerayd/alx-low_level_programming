@@ -67,7 +67,7 @@ void print_all(const char *const format, ...)
 				flag++;
 				break;
 			case 'i':
-				print_num(va_arg(args, double));
+				print_num(va_arg(args, int));
 				flag++;
 				break;
 			case 'f':

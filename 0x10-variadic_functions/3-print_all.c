@@ -67,6 +67,9 @@ void print_all(const char *const format, ...)
 				flag++;
 				break;
 			case 'i':
+				print_num(va_arg(args, double));
+				flag++;
+				break;
 			case 'f':
 				print_float(va_arg(args, double));
 				flag++;
@@ -85,5 +88,4 @@ void print_all(const char *const format, ...)
 	}
 	printf("\n");
 	va_end(args);
-
 }

@@ -54,6 +54,7 @@ void print_all(const char *const format, ...)
 
 	if (format == NULL)
 	{
+		printf("\n");
 		return;
 	}
 

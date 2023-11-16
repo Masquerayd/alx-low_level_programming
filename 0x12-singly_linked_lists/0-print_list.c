@@ -2,45 +2,26 @@
 #include <stdio.h>
 
 /**
- * printstrl - prints the string
- * @str: string to be printed
- * @len: length of string
- * Return: nothing
- */
-
-void printstrl(const char *str, unsigned int len)
-{
-	if (str == NULL)
-	{
-		printf("[0] (nil)\n");
-	}
-	else
-	{
-		printf("[%d] %s\n", len, str);
-	}
-}
-
-/**
- * print_list - prints all the elemts of a list_t
- * @h: pointer to the list to be printed
+ * print_list - prints stringly list
+ * @h: list
  * Return: the number of nodes
  */
-size_t print_list(list_t *h)
+size_t print_list(const list_t *h)
 {
-	int numNodes = 0;
+	int count = 0;
 
 	while (h != NULL)
 	{
-	printstrl(h->str, h->len);
-		numNodes++;
-
-
-		if (h->next == NULL)
+		if (h->str == NULL)
 		{
-			return (numNodes);
+			printf("[0] (nil)\n");
+		}
+		else
+		{
+			printf("[%d] %s\n", h->len, h->str);
 		}
 		h = h->next;
-
 	}
-	return (numNodes);
+	return (count);
 }
+

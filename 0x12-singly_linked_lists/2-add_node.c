@@ -6,6 +6,7 @@
  * add_node - adds a node to the list
  * @head: points to the pointer of the list
  * @str: the string that will be copied
+ * Return: returns pointer of the new list
  */
 list_t *add_node(list_t **head, const char *str)
 {

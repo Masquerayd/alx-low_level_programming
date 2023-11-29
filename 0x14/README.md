@@ -18,11 +18,11 @@ A bit is the smallest unit of data that can be stored in a computer, in c we can
 
 The truth table below shows some of the bitwise operators in C
 
-| X | Y | X & Y | **X|Y** | X ^ Y |
-|:---:|:---:|:---:|:---:|:---:|
-| 0 | 0 | 0 | 0 | 0 |
-| 0 | 1 | 0 | 1 | 1 |
-| 1 | 0 | 0 | 1 | 1 |
-| 1 | 1 | 1 | 1 | 0 |
+ X | Y | X&Y | **X|Y** | X^Y
+---|---|---|---|---
+0 | 0 | 0 | 0 | 0
+0 | 1 | 0 | 1 | 1
+1 | 0 | 0 | 1 | 1
+1 | 1 | 1 | 1 | 0
 
 

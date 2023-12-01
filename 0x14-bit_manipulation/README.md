@@ -26,11 +26,25 @@ The truth table below shows some of the bitwise operators in C
 1 | 1 | 1 | 1 | 0
 
 
-when dealing with base conversions its better to convert the Hex, base 10, Octal to binary first then comvert it to anywhere 
+when dealing with base conversions its better to convert the Hex, ibase 10, Octal to binary first then comvert it to anywhere 
 ## Binary conversion
 
-when converting from base 10 to binary , its important to remember that each bit represrnts a power of 2 as show in the order below
+When converting from base 10 to binary , its important to remember that each bit represrnts a power of 2 as show in the order below
 
 binay | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
 ---|---|---|---|---|---|---|---|---
-base 10| 2<sup>7</sup> | 2<sup>6</sup> | 2<sup>5</sup> | 2<sup>4</sup> | 2<sup>3</sup> | 2<sup>2</sup> | 2<sup>1</sup> | 2<sup>0</sup>
+**base 10** | 2<sup>7</sup> | 2<sup>6</sup> | 2<sup>5</sup> | 2<sup>4</sup> | 2<sup>3</sup> | 2<sup>2</sup> | 2<sup>1</sup> | 2<sup>0</sup>
+
+When converting from Hex to binary, we only convert of the single digit of the Hex number, meaning that we will only you 4 binary bits , this is shown below
+
+binay | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
+---|---|---|---|---|---|---|---|---
+**HEX** | 2<sup>3</sup> | 2<sup>2</sup> | 2<sup>1</sup> | 2<sup>0</sup> | 2<sup>3</sup> | 2<sup>2</sup> | 2<sup>1</sup> | 2<sup>0</sup>
+
+when converting to Octal, we only convert a single digit and we use 3 bits only 
+
+binay | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
+---|---|---|---|---|---|---|---|---
+**Octal** | 2<sup>1</sup> | 2<sup>0</sup> | 2<sup>2</sup> | 2<sup>1</sup> | 2<sup>0</sup> | 2<sup>2</sup> | 2<sup>1</sup> | 2<sup>0</sup>
+
+

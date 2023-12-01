@@ -38,7 +38,7 @@ binay | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
 When converting from Hex to binary, we only convert of the single digit of the Hex number, meaning that we will only you 4 binary bits , this is shown below
 
 binay | 1 | 1 | 1 | 1 |
----|---|---|---
+---|---|---|---|---
 **HEX** | 2<sup>2</sup> | 2<sup>1</sup> | 2<sup>0</sup>
 
 when converting to Octal, we only convert a single digit and we use 3 bits only 

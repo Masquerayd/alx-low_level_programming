@@ -33,4 +33,4 @@ when converting from base 10 to binary , its important to remember that each bit
 
 binay | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
 ---|---|---|---|---|---|---|---|---
-base 10| 2<sub>7</sub> | 2<sub>6</sub> | 2<sub>5</sub> | 2<sub>4</sub> | 2<sub>3</sub> | 2<sub>2</sub> | 2<sub>1</sub> | 2<sub>0</sub>
+base 10| 2<sup>7</sup> | 2<sup>6</sup> | 2<sup>5</sup> | 2<sup>4</sup> | 2<sup>3</sup> | 2<sup>2</sup> | 2<sup>1</sup> | 2<sup>0</sup>
